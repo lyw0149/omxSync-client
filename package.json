@@ -1,0 +1,17 @@
+{
+  "name": "psw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mplayer": "^2.1.0",
+    "omx-manager": "^0.1.4",
+    "serialport": "^4.0.7",
+    "socket.io-client": "^1.7.3"
+  }
+}
