@@ -53,7 +53,7 @@ function startClient(){
 
   var startTime = 0;
   socket.on('play', function(data){
-    camera.play();
+    setTimeout(function(){camera.play()},1000);
     startTime= Date.now();
   });
   
