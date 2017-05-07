@@ -1,14 +1,7 @@
 var SerialPort = require("serialport");
-var serialPort = new SerialPort("/dev/ttyACM0", {
-  baudrate: 9600
-});
+//var serialPort = new SerialPort("/dev/ttyACM0",  baudrate: 9600});
 
-serialPort.on("open", function () {
-  console.log('open');
-  serialPort.on('data', function(data){
-    console.log('data received: ' + data);
-  });
-});
+//serialPort.on("open", function () { console.log('open'); });
 
 function sendData(data){
   serialPort.write(new Buffer(data,'ascii'), function(err, results) {
@@ -19,7 +12,7 @@ function sendData(data){
 
 var OmxManager = require('omx-manager');
 var manager = new OmxManager();
-var camera = manager.create('video.mp4',{
+var camera = manager.create('video.mkv',{
   '-o': 'hdmi',
   '--vol': 13,
   '-b': true,
