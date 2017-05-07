@@ -112,5 +112,5 @@ function startClient(){
   socket.on('disconnect', function(){});
 }
 
-setTimeout(startClient,2000);
+setTimeout(startClient,5000);
 
