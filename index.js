@@ -42,7 +42,6 @@ var camera = manager.create('video.mkv',{
   '-o': 'hdmi',
   '--vol': 13,
   '-b': true,
-  '-p': true
 });
 
 function startClient(){
